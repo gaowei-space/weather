@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the gaowei-space/weather.
+ *
+ * (c) gaowei <huyao9950@hotmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace GaoweiSpace\Weather;
 
 use GaoweiSpace\Weather\Exceptions\HttpException;
@@ -41,17 +50,17 @@ class Weather
         $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
 
         if (!\in_array(\strtolower($format), ['xml', 'json'])) {
-            throw new InvalidArgumentException('Invalid response format: ' . $format);
+            throw new InvalidArgumentException('Invalid response format: '.$format);
         }
 
         if (!\in_array(\strtolower($type), ['base', 'all'])) {
-            throw new InvalidArgumentException('Invalid type value(base/all): ' . $type);
+            throw new InvalidArgumentException('Invalid type value(base/all): '.$type);
         }
 
         $query = array_filter([
-            'key'        => $this->key,
-            'city'       => $city,
-            'output'     => \strtolower($format),
+            'key' => $this->key,
+            'city' => $city,
+            'output' => \strtolower($format),
             'extensions' => \strtolower($type),
         ]);
 
