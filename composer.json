@@ -1,0 +1,19 @@
+{
+    "name": "gaowei-space\/weather",
+    "description": "天气来了",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "高伟",
+            "email": "huyao9950@hotmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "GaoweiSpace\\Weather\\": "src"
+        }
+    }
+}
