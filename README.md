@@ -1,6 +1,6 @@
 <h1 align="center"> Weather </h1>
 
-基于 [高德开放平台](https://lbs.amap.com/dev/id/newuser) 的 PHP 天气信息组件.
+🌈 基于 [高德开放平台](https://lbs.amap.com/dev/id/newuser) 的 PHP 天气信息组件.
 
 ![StyleCI build status](https://github.styleci.io/repos/430001797/shield)
 
