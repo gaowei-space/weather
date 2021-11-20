@@ -1,6 +1,6 @@
 <h1 align="center"> weather </h1>
 
-<p align="center"> 德天气.</p>
+<p align="center"> 天气扩展包，基于高德API.</p>
 
 
 ## Installing
