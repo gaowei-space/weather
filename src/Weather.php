@@ -11,8 +11,6 @@ class Weather
     protected $key;
     protected $guzzleOptions = [];
 
-
-
     public function __construct(string $key)
     {
         $this->key = $key;
@@ -26,6 +24,16 @@ class Weather
     public function setGuzzleOptions(array $guzzleOptions)
     {
         $this->guzzleOptions = $guzzleOptions;
+    }
+
+    public function getLiveWeather($city, $format = 'json')
+    {
+        return $this->getWeather($city, 'base', $format);
+    }
+
+    public function getForecastsWeather($city, $format = 'json')
+    {
+        return $this->getWeather($city, 'all', $format);
     }
 
     public function getWeather($city, $type = 'base', $format = 'json')
