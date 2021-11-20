@@ -1,6 +1,6 @@
 {
     "name": "gaowei-space\/weather",
-    "description": "天气来了",
+    "description": "基于 高德开放平台 的 PHP 天气信息组件",
     "license": "MIT",
     "authors": [
         {
