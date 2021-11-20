@@ -161,9 +161,9 @@ array|string getWeather(string $city, string $type = 'base', string $format = 'j
 在 Laravel 中使用也是同样的安装方式，配置写在 config/services.php 中：
 ```php
 
-    'weather' => [
-        'key' => env('WEATHER_API_KEY'),
-    ],
+'weather' => [
+    'key' => env('WEATHER_API_KEY'),
+],
 
 ```
 然后在 .env 中配置 WEATHER_API_KEY ：
@@ -175,20 +175,20 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
 #### 方法参数注入
 ```php
 
-    public function edit(Weather $weather)
-    {
-        $response = $weather->getWeather('深圳');
-    }
+public function edit(Weather $weather)
+{
+    $response = $weather->getWeather('深圳');
+}
 
 ```
 
 #### 服务名访问
 ```php
 
-    public function edit()
-    {
-        $response = app('weather')->getWeather('深圳');
-    }
+public function edit()
+{
+    $response = app('weather')->getWeather('深圳');
+}
 
 ```
 
