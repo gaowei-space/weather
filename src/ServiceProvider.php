@@ -1,8 +1,15 @@
 <?php
 
-namespace GaoweiSpace\Weather;
+/*
+ * This file is part of the gaowei-space/weather.
+ *
+ * (c) gaowei <huyao9950@hotmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
 
-use GaoweiSpace\Weather\Weather;
+namespace GaoweiSpace\Weather;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
